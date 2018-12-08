@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>پرتال اینترنتی - صفحه ورود کاربران</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styleLogin.css"/>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" href="/webjars/font-awesome/5.5.0/css/fontawesome.min.css"/>-->
+    <script type="text/javascript" src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="webjars/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="/webjars/jquery/3.1.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/login.js"></script>
+
+</head>
+<body>
+
+<!--<div id="dddd" class="alert alert-success alert-dismissible text-center" role="alert">-->
+    <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+    <!--<strong>Congratulations!</strong> You successfully tied your shoelace!-->
+<!--</div>-->
+
+<!--<div class="alert alert-danger" role="alert">Danger alert</div>-->
+
+<div id="wrapper">
+
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+
+    <form name="login-form" class="login-form" action="/j_spring_security_check" method="post">
+
+        <div class="header">
+            <h1 id="titleId" class="text-center">پرتال اینترنتی</h1>
+            <span id="subTitleId">جهت ورود به پرتال نام کاربری و گذر واژه را وارد نمایید</span>
+        </div>
+
+        <div class="content">
+            <input id="username" name="username" type="text" class="input username" value="" placeholder="نام کاربری"/>
+            <input id="password" name="password" type="password" class="input password" value=""
+                   placeholder="گذر واژه"/>
+        </div>
+
+        <div class="footer">
+            <!--<input type="button" name="button" onclick="loginUser();" value="ورود" class="button"/>-->
+            <button class="button" type="submit" name="button"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;ورود</button>
+            <!--<span><i class="fa fa-address-book " style="font-size: large"></i></span>-->
+            <!--<input type="button" name="button" class="button" value="Basket" onclick="loginUser();"/>-->
+        </div>
+    </form>
+
+</div>
+
+<div class="gradient"></div>
+
+</body>
+</html>
